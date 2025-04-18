@@ -66,7 +66,14 @@ IoT 개발자 C#/WinApp 리포지토리 2025
 
 - .NET 데스크톱 개발을 설치하면 C#, Visual Basic, F# 등 여러언어를 사용가능
 
-- `C# 12.0`, `.NET 8`, Visual Studio 2022 Community Edition에서 학습
+- `C# 12.0`, `.NET 8`, `Visual Studio 2022` Community Edition에서 학습
+
+## 2일차
+
+- WinApp으로 문법 학습. 문법 학습 후 WPF로 이전 
+
+### C# 문법
+
 
 ## 10일차
 
