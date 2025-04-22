@@ -9,14 +9,14 @@ namespace SyntaxWinApp02
 
         private void BtnMsg_Click(object sender, EventArgs e)
         {
-            // ¿¬»êÀÚ : =, +, -, *, /, %, ^, +=, -=, *=
-            // C, C++°ú µ¿ÀÏ
+            // ì—°ì‚°ìž : =, +, -, *, /, %, ^, +=, -=, *=
+            // C, C++ê³¼ ì—°ì‚° ë™ì¼
             int val = 2 ^ 10;
 
             int result = 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2;
 
-            //MessageBox.Show(((3 > 2) && (10 < 9)).ToString(), "¾Ë¸²", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            MessageBox.Show(result.ToString(), "¾Ë¸²", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //MessageBox.Show(((3 > 2) && (10 < 9)).ToString(), "ì•Œë¦¼", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(result.ToString(), "ì•Œë¦¼", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
 
