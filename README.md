@@ -477,7 +477,7 @@ IoT 개발자 C#/WinApp 리포지토리 2025
 
         <img src="./image/cs0009.png" width="600">
 
-    4. 파일입출력
+    4. 파일입출력 - [소스](./day04/Day04Study/SyntaxWinApp03/FrmMain.cs)
         - 파일 쓰기, 읽기 기능
         - SaveFileDiaolg, OpenFileDialog, ColorDialog 컨트롤 사용
 

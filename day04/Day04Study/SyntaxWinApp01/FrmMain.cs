@@ -2,6 +2,7 @@ using SyntaxWinApp01.Properties;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SyntaxWinApp01
+{
     public partial class FrmMain : Form
     {
         public FrmMain()
@@ -17,8 +18,8 @@ namespace SyntaxWinApp01
             {
                 person.Name = TxtName.Text.Trim();
 
-                // int -> 4bytesï¿½ï¿½ï¿½ï¿½, decimal -> 16bytes ï¿½Ç¼ï¿½
-                // Å« ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò´ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¯)
+                // int -> 4bytesÁ¤¼ö, decimal -> 16bytes ½Ç¼ö
+                // Å« »çÀÌÁîÀÇ µ¥ÀÌÅÍÇü¿¡ ÀÛÀº »çÀÌÁî µ¥ÀÌÅÍÇü °ªÀ» ÇÒ´ç(¹¬½ÃÀûÇüº¯È¯)
                 //person.Age = NudAge.Value;
                 person.Age = Convert.ToInt32(NudAge.Value);
 
@@ -30,8 +31,8 @@ namespace SyntaxWinApp01
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "ï¿½ï¿½ï¿½ï¿½", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ M/F ï¿½ï¿½ ï¿½Ñ±ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "¿¹¿Ü", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("¼³º´Àº M/F Áß ÇÑ±ÛÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä", "¿¹¿Ü", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -44,27 +45,27 @@ namespace SyntaxWinApp01
                 MessageBox.Show(rval.ToString());
 
             }
-            catch (ArithmeticException ex)        // DivideByZeroExceptionï¿½ï¿½ ï¿½Î¸ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Øµï¿½ ï¿½ï¿½ï¿½ï¿½
+            catch (ArithmeticException ex)        // DivideByZeroExceptionÀÇ ºÎ¸ð Å¬·¡½º¸¦ »ç¿ëÇØµµ ¹«¹æ
             {
-                MessageBox.Show("ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½", "ï¿½ï¿½ï¿½ï¿½", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("¼ö´Â 0À¸·Î ³ª´­ ¼ö ¾ø½À´Ï´Ù", "¿¹¿Ü", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.", "ï¿½ï¿½ï¿½ï¿½", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("¾Ë ¼ö ¾ø´Â ¿¹¿ÜÀÔ´Ï´Ù.", "¿¹¿Ü", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
-                // ï¿½ï¿½ï¿½Ü¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×»ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½â¿¡ ï¿½Û¼ï¿½
+                // ¿¹¿Ü¿Í °ü°è¾øÀÌ Ç×»ó ½ÇÇàµÇ¾î¾ß ÇÏ´Â ±¸¹® ¿©±â¿¡ ÀÛ¼º
             }
 
-            // ï¿½ï¿½ï¿½ï¿½ Personï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
+            // µé¾î¿Â Person°´Ã¼ °ªÀ¸·Î Ã³¸®
             person.BirthYear = DateTime.Now.Year - person.Age;
 
-            char korGender = person.Gender == 'M' ? 'ï¿½ï¿½' : 'ï¿½ï¿½';
-            string result = $"ï¿½ï¿½ï¿½ï¿½ Personï¿½ï¿½ {person.Name}\r\n" +
-                            $"ï¿½ï¿½ï¿½ï¿½ : {person.Age}ï¿½ï¿½({person.BirthYear}ï¿½ï¿½ï¿½)\r\n" +
-                            $"ï¿½ï¿½ï¿½ï¿½ : {korGender}ï¿½ï¿½\r\n" +
-                            $"ï¿½Úµï¿½ï¿½ï¿½ : {person.Phone}";
+            char korGender = person.Gender == 'M' ? '³²' : '¿©';
+            string result = $"ÇöÀç PersonÀº {person.Name}\r\n" +
+                            $"³ªÀÌ : {person.Age}¼¼({person.BirthYear}³â»ý)\r\n" +
+                            $"¼ºº° : {korGender}ÀÚ\r\n" +
+                            $"ÇÚµåÆù : {person.Phone}";
             TxtResult.Text = result;
 
             if (person.Age > 0 && person.Age < 20)
