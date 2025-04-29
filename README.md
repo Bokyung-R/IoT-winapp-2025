@@ -926,10 +926,12 @@ IoT 개발자 C#/WinApp 리포지토리 2025
     - NavigationService 사용
     - NavigationUIVisibility 속성
 
-- 컨트롤 디자인, 리소스
-
-
 - 벡터 디자인, 비트맵 디자인
+    - 이미지는 속성 > 빌드 작업 > 리소스 선택
+    - 출력 디렉토리로 복사 > 복사 안 함 선택
+    - WPF Rectangle, Ellipse, Path 등은 전부 벡터이미지
+
+- 컨트롤 디자인, 리소스
 
 
 ## 10일차

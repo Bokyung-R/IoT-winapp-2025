@@ -29,22 +29,15 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="GreenYellow"/>
-                        <Label Content="CHECK" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Ellipse Fill="{TemplateBinding Background}"/>
+                        <Label Content="{TemplateBinding Content}" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
         </Button>
 
-        <Button Grid.Row="1" Grid.Column="2" Content="CHECK" Margin="10" Click="Button_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <Grid>
-                        <Ellipse Fill="GreenYellow"/>
-                        <Label Content="CHECK" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
+        
     </Grid>
 </Window>
