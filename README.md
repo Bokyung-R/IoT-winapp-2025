@@ -956,10 +956,13 @@ IoT 개발자 C#/WinApp 리포지토리 2025
     1. NuGet 패키지 관리 > 
         - MahApps.Metro 설치
         - MahApps.Metro.IconPacks 설치
+
     2. https://github.com/MahApps/MahApps.Metro/releases
         - MahApps.Metro.Demo-v2.4.10-rc0001.zip 다운로드
+
     3. https://github.com/MahApps/IconPacks.Browser
         - IconPacks.Browser-net8-v2.0.0.zip 다운로드
+
     4. App.xaml에 필요한 리소스 코드 복붙
         ```xml
         <Application.Resources>
@@ -976,6 +979,7 @@ IoT 개발자 C#/WinApp 리포지토리 2025
         ```
     5. MainWindow.xaml.cs
         - Window -> MetroWindow 변경
+
     6. MainWindow.xaml
         - mah 네임스페이스 추가
         - Window -> mah.MetroWindow로 변경
@@ -985,6 +989,7 @@ IoT 개발자 C#/WinApp 리포지토리 2025
         <img src="./image/cs0020.png" width="600">
 
     8. Theme - Light, Dark 2개
+
     9. Accent - Amber ~ Yellow 총 23개
 
 - 연습예제
@@ -1040,10 +1045,12 @@ IoT 개발자 C#/WinApp 리포지토리 2025
         ```
 
     - MainWindow.xaml xmlns:ui추가. App.xaml과 동일
-    ```xml
-    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
-    ```
+        ```xml
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        ```
+    
     - MainWindow.xaml Window -> ui:FluentWindow 변경
+
     - Grid 내 타이틀바 추가
         ```xml
         <ui:TitleBar Title="WPF UI App" />
@@ -1053,7 +1060,14 @@ IoT 개발자 C#/WinApp 리포지토리 2025
         - Window 전체 Background를 어두운 색으로 지정 후 작업
     
     - 실행결과
+        [Dark Theme]
         <img src="./image/cs0022.png" width="600">    
+
+        [Light Theme]
+        <img src="./image/cs0023.png" width="600">
+
+
+
 ## 10일차
 
 ### 코딩테스트
