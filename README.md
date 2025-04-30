@@ -1071,3 +1071,12 @@ IoT 개발자 C#/WinApp 리포지토리 2025
 ## 10일차
 
 ### 코딩테스트
+
+#### 토이 프로젝트 - 윈앱으로 가계부 만들기
+[프로젝트 소스](./toyProject/SyntaxWinApp01/WinApp1/FrmMain.cs)
+
+<img src="./image/toyProject.png" width="350">
+
+**추가해야할 부분**
+- 색상 추가하고싶음
+- DataGridView?? 사용할 수 있다는게 확인해보기

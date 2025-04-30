@@ -18,7 +18,7 @@ namespace WinApp1
         {
             LoadHistory();
         }
-
+         
         private void BtnSave_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(TxtValue.Text) || string.IsNullOrWhiteSpace(TxtPrice.Text))
@@ -31,6 +31,7 @@ namespace WinApp1
                 MessageBox.Show("금액은 숫자만 입력 가능합니다.", "입력 오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
+            // 이 부분 형식 바꾸고싶음
             string line = $"{CboInOut.SelectedItem} : {TxtValue.Text} {TxtPrice.Text}원";
             TxtHistory.Text += line + Environment.NewLine;
 
