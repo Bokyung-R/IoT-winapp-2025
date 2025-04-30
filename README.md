@@ -1060,10 +1060,10 @@ IoT 개발자 C#/WinApp 리포지토리 2025
         - Window 전체 Background를 어두운 색으로 지정 후 작업
     
     - 실행결과
-        [Dark Theme]
+        - [Dark Theme]
         <img src="./image/cs0022.png" width="600">    
 
-        [Light Theme]
+        - [Light Theme]
         <img src="./image/cs0023.png" width="600">
 
 
