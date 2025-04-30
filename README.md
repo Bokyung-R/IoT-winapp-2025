@@ -1077,6 +1077,8 @@ IoT 개발자 C#/WinApp 리포지토리 2025
 
 <img src="./image/toyProject.png" width="350">
 
+https://github.com/user-attachments/assets/a169ec80-550b-4423-9477-449b63526dd2
+
 **추가해야할 부분**
 - 색상 추가하고싶음
 - DataGridView?? 사용할 수 있다는게 확인해보기
