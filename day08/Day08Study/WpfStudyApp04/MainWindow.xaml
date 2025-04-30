@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfStudyApp04"
         mc:Ignorable="d"
-        Title="컨트롤디자인/리소스" Height="350" Width="600">
+        Title="컨트롤디자인/리소스" Height="350" Width="600"
+        Background="{StaticResource SliderBackgroundBrush}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="10"/>
@@ -24,20 +25,33 @@
             <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
 
-        <!-- UI 컨트롤 구성-->
-        <Button Grid.Row="1" Grid.Column="1" Content="CHECK" Margin="10" Click="Button_Click">
+        <!-- UI 컨트롤 구성 -->
+        <Button Grid.Row="1" Grid.Column="1" Content="CHECK" Margin="10"
+                Click="Button_Click" Background="{StaticResource NormalBrush}">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="{TemplateBinding Background}"/>
+                        <!--<Ellipse Fill="{TemplateBinding Background}" />-->
+                        <Rectangle Fill="#AA000000" Margin="3,3,0,0"
+                                   RadiusX="5.0" RadiusY="5.0"/>
+                        <Rectangle Fill="{TemplateBinding Background}" Margin="0,0,3,3" 
+                                   RadiusX="5.0" RadiusY="5.0"/>
                         <Label Content="{TemplateBinding Content}" 
+                               Margin="5,5,10,10"
                                HorizontalAlignment="Center" 
-                               VerticalAlignment="Center"/>
+                               VerticalAlignment="Center" />
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
         </Button>
 
-        
+        <!-- 리소스 사용, App.xaml에 선언된 Resource -> StaticResource -->
+        <!--<Label Grid.Row="1" Grid.Column="4" 
+               Content="{StaticResource custButton}"
+               Background="{StaticResource accentRed}"
+               Margin="5"/>
+        -->
+        <Button Grid.Row="1" Grid.Column="2" Margin="5" Content="CLICK"></Button>
+
     </Grid>
 </Window>

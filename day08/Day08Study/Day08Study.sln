@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfStudyApp01", "WpfStudyApp01\WpfStudyApp01.csproj", "{231F1B6A-31D8-412F-BDF0-DADF9A152935}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfStudyApp03", "WpfStudyApp3\WpfStudyApp03.csproj", "{F674EDF9-20E7-4640-A1AE-FAD092071FA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfStudyApp04", "WpfStudyApp04\WpfStudyApp04.csproj", "{C1CA047D-AEB4-427D-B9AA-6379E4A6B198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfStudyApp05", "WpfStudyApp05\WpfStudyApp05.csproj", "{78EBA624-7DF8-F7EB-DA96-1496D2FB920A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C1CA047D-AEB4-427D-B9AA-6379E4A6B198}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1CA047D-AEB4-427D-B9AA-6379E4A6B198}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1CA047D-AEB4-427D-B9AA-6379E4A6B198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78EBA624-7DF8-F7EB-DA96-1496D2FB920A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EBA624-7DF8-F7EB-DA96-1496D2FB920A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EBA624-7DF8-F7EB-DA96-1496D2FB920A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EBA624-7DF8-F7EB-DA96-1496D2FB920A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
