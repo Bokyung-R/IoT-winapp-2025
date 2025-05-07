@@ -41,22 +41,25 @@
             label1 = new Label();
             DtpDay = new DateTimePicker();
             groupBox2 = new GroupBox();
-            label13 = new Label();
+            DgvHistory = new DataGridView();
+            Type = new DataGridViewTextBoxColumn();
+            Detail = new DataGridViewTextBoxColumn();
+            Price = new DataGridViewTextBoxColumn();
             BtnModify = new Button();
-            TxtHistory = new TextBox();
+            BtnDelete = new Button();
             groupBox3 = new GroupBox();
             TxtTotal = new TextBox();
             TxtExpenditure = new TextBox();
-            label12 = new Label();
             TxtIncome = new TextBox();
-            label11 = new Label();
             label8 = new Label();
             label10 = new Label();
             label7 = new Label();
             label9 = new Label();
             label6 = new Label();
+            label11 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DgvHistory).BeginInit();
             groupBox3.SuspendLayout();
             SuspendLayout();
             // 
@@ -167,62 +170,80 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(label13);
+            groupBox2.Controls.Add(DgvHistory);
             groupBox2.Controls.Add(BtnModify);
-            groupBox2.Controls.Add(TxtHistory);
+            groupBox2.Controls.Add(BtnDelete);
             groupBox2.Location = new Point(12, 195);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(310, 221);
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
-            groupBox2.Text = "내역";
             // 
-            // label13
+            // DgvHistory
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(52, 193);
-            label13.Name = "label13";
-            label13.Size = new Size(146, 15);
-            label13.TabIndex = 7;
-            label13.Text = "수정시 형식에 주의할 것 !";
+            DgvHistory.BackgroundColor = Color.GhostWhite;
+            DgvHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgvHistory.Columns.AddRange(new DataGridViewColumn[] { Type, Detail, Price });
+            DgvHistory.GridColor = Color.Silver;
+            DgvHistory.Location = new Point(6, 22);
+            DgvHistory.Name = "DgvHistory";
+            DgvHistory.Size = new Size(298, 157);
+            DgvHistory.TabIndex = 8;
+            // 
+            // Type
+            // 
+            Type.HeaderText = "구분";
+            Type.Name = "Type";
+            Type.Width = 55;
+            // 
+            // Detail
+            // 
+            Detail.HeaderText = "내역";
+            Detail.Name = "Detail";
+            // 
+            // Price
+            // 
+            Price.HeaderText = "금액";
+            Price.Name = "Price";
             // 
             // BtnModify
             // 
-            BtnModify.Location = new Point(204, 185);
+            BtnModify.Location = new Point(178, 185);
             BtnModify.Name = "BtnModify";
-            BtnModify.Size = new Size(100, 30);
+            BtnModify.Size = new Size(60, 30);
             BtnModify.TabIndex = 6;
             BtnModify.Text = "수정";
             BtnModify.UseVisualStyleBackColor = true;
             BtnModify.Click += BtnModify_Click;
             // 
-            // TxtHistory
+            // BtnDelete
             // 
-            TxtHistory.Location = new Point(6, 22);
-            TxtHistory.Multiline = true;
-            TxtHistory.Name = "TxtHistory";
-            TxtHistory.ScrollBars = ScrollBars.Vertical;
-            TxtHistory.Size = new Size(298, 157);
-            TxtHistory.TabIndex = 5;
+            BtnDelete.Location = new Point(244, 185);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(60, 30);
+            BtnDelete.TabIndex = 6;
+            BtnDelete.Text = "삭제";
+            BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += BtnDelete_Click;
             // 
             // groupBox3
             // 
             groupBox3.Controls.Add(TxtTotal);
             groupBox3.Controls.Add(TxtExpenditure);
-            groupBox3.Controls.Add(label12);
             groupBox3.Controls.Add(TxtIncome);
-            groupBox3.Controls.Add(label11);
             groupBox3.Controls.Add(label8);
+            groupBox3.Controls.Add(label11);
             groupBox3.Controls.Add(label10);
             groupBox3.Controls.Add(label7);
             groupBox3.Controls.Add(label9);
             groupBox3.Controls.Add(label6);
+            groupBox3.ForeColor = Color.Black;
             groupBox3.Location = new Point(12, 422);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(310, 127);
             groupBox3.TabIndex = 3;
             groupBox3.TabStop = false;
-            groupBox3.Text = "하루 수입/지출";
+            groupBox3.Text = "달 수입/지출";
             // 
             // TxtTotal
             // 
@@ -240,15 +261,6 @@
             TxtExpenditure.Size = new Size(146, 23);
             TxtExpenditure.TabIndex = 1;
             // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(240, 88);
-            label12.Name = "label12";
-            label12.Size = new Size(19, 15);
-            label12.TabIndex = 6;
-            label12.Text = "원";
-            // 
             // TxtIncome
             // 
             TxtIncome.Location = new Point(88, 27);
@@ -256,15 +268,6 @@
             TxtIncome.ReadOnly = true;
             TxtIncome.Size = new Size(146, 23);
             TxtIncome.TabIndex = 1;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(238, 92);
-            label11.Name = "label11";
-            label11.Size = new Size(19, 15);
-            label11.TabIndex = 6;
-            label11.Text = "원";
             // 
             // label8
             // 
@@ -311,6 +314,15 @@
             label6.TabIndex = 0;
             label6.Text = "총 수입 :";
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(240, 85);
+            label11.Name = "label11";
+            label11.Size = new Size(19, 15);
+            label11.TabIndex = 6;
+            label11.Text = "원";
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -327,7 +339,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DgvHistory).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             ResumeLayout(false);
@@ -346,19 +358,21 @@
         private Label label4;
         private TextBox TxtPrice;
         private Button BtnSave;
-        private TextBox TxtHistory;
         private ComboBox CboInOut;
         private TextBox TxtTotal;
         private TextBox TxtExpenditure;
-        private Label label12;
         private TextBox TxtIncome;
-        private Label label11;
         private Label label8;
         private Label label10;
         private Label label7;
         private Label label9;
         private Label label6;
+        private Button BtnDelete;
+        private DataGridView DgvHistory;
+        private DataGridViewTextBoxColumn Type;
+        private DataGridViewTextBoxColumn Detail;
+        private DataGridViewTextBoxColumn Price;
         private Button BtnModify;
-        private Label label13;
+        private Label label11;
     }
 }
