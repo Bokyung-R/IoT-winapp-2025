@@ -1073,7 +1073,8 @@ IoT 개발자 C#/WinApp 리포지토리 2025
 ### 코딩테스트
 
 #### 토이 프로젝트 - 윈앱으로 가계부 만들기
-[프로젝트 소스](./toyProject/SyntaxWinApp01/WinApp1/FrmMain.cs)
+
+https://github.com/user-attachments/assets/40899f72-f0b4-4c23-9a27-0648a6699ef2
 
 - 프로젝트 설명
     - 입력 및 화면 출력
